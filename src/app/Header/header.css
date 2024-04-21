@@ -96,6 +96,7 @@ select {
     display: flex;
     flex-direction: column;
     gap: 1em;
+    border-radius: 10px;
     transform: translateX(-150%);
     transition: transform 0.3s ease-in-out;
     -webkit-backdrop-filter: blur(16px);
@@ -110,6 +111,6 @@ select {
     background-color: #e2e8ed;
   }
   .expand {
-    transform: translateX(-10%);
+    transform: translateX(-6%);
   }
 }

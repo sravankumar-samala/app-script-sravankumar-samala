@@ -47,3 +47,8 @@ button {
   width: 200px;
   height: 100px;
 }
+@media (max-width: 640px) {
+  .app-container {
+    width: min(100%, 1240px);
+  }
+}
