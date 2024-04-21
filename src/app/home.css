@@ -1,0 +1,31 @@
+.home-container {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  /* background-color: lightgreen; */
+}
+.title-container {
+  text-align: center;
+  max-width: 450px;
+  margin-inline: auto;
+}
+.title-container h1 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: clamp(2rem, 3.5vw, 4rem);
+  margin-block: 10px 20px;
+}
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+.products-container li {
+  display: grid;
+  place-items: center;
+  background-color: lightgray;
+}
+.products-container li img {
+  max-width: 100%;
+}

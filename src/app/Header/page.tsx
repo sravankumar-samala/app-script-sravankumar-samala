@@ -8,6 +8,7 @@ import { PiShoppingCartSimpleLight } from "react-icons/pi";
 import { BsPerson } from "react-icons/bs";
 import Search from "../../components/search";
 import NavItems from "../../components/navItems";
+import SmallScreenNavItems from "../../components/smallScreenNavItems";
 import { HiOutlineMenu } from "react-icons/hi";
 import "./header.css";
 
@@ -48,6 +49,8 @@ export default function Header() {
           <Link href="/profile" className="profile-lg">
             <BsPerson />
           </Link>
+
+          {/* didn't implemented onChange event */}
           <select value="English" className="select-lg">
             <option value="English">ENG</option>
             <option value="Hindi">HINDI</option>
@@ -55,28 +58,10 @@ export default function Header() {
         </div>
       </div>
       <NavItems />
-      <SmallScreenNavItems isNavExpanded={isNavExpanded} />
+      <SmallScreenNavItems
+        isNavExpanded={isNavExpanded}
+        toggleNav={toggleNav}
+      />
     </header>
-  );
-}
-
-function SmallScreenNavItems({ isNavExpanded }: { isNavExpanded: boolean }) {
-  const expandClass = isNavExpanded && "expand";
-
-  return (
-    <nav className={`small-screen-nav-container ${expandClass}`}>
-      <Link href="/profile" className="profile-sm">
-        Profile
-      </Link>
-      <Link href="/">Shop</Link>
-      <Link href="/page-in-progress">Skills</Link>
-      <Link href="/page-in-progress">Stories</Link>
-      <Link href="/page-in-progress">About</Link>
-      <Link href="/page-in-progress">Contact Us</Link>
-      <select value="English" className="select-sm">
-        <option value="English">ENG</option>
-        <option value="Hindi">HINDI</option>
-      </select>
-    </nav>
   );
 }
