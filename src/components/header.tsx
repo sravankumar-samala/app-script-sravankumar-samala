@@ -6,11 +6,11 @@ import Link from "next/link";
 import { IoHeartOutline } from "react-icons/io5";
 import { PiShoppingCartSimpleLight } from "react-icons/pi";
 import { BsPerson } from "react-icons/bs";
-import Search from "../../components/search";
-import NavItems from "../../components/navItems";
-import SmallScreenNavItems from "../../components/smallScreenNavItems";
+import Search from "./search";
+import NavItems from "./navItems";
+import SmallScreenNavItems from "./smallScreenNavItems";
 import { HiOutlineMenu } from "react-icons/hi";
-import "./header.css";
+import "../app/header.css";
 
 export default function Header() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);

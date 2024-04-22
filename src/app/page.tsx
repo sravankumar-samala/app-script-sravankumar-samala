@@ -1,4 +1,4 @@
-import RenderProducts from "../components/RenderProducts";
+import RenderProducts from "../components/renderProducts";
 import "./home.css";
 
 const getProducts = async (): Promise<[]> => {
