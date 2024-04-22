@@ -41,7 +41,6 @@ button {
   grid-template-rows: auto 1fr;
   width: min(90%, 1240px);
   margin: 0 auto;
-  /* border: 1px solid black; */
 }
 .in-progress-container,
 .empty-container {

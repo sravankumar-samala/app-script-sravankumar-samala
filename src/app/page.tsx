@@ -1,4 +1,4 @@
-import Image from "next/image";
+import RenderProducts from "../components/RenderProducts";
 import "./home.css";
 
 const getProducts = async (): Promise<[]> => {
@@ -21,34 +21,7 @@ export default async function Home() {
           reiciendis sunt enim.
         </p>
       </div>
-      <ul className="products-container">
-        {products?.map((each: Product) => (
-          <li key={each.id}>
-            <Image
-              src={each.image}
-              width={200}
-              height={200}
-              alt={each.category}
-            />
-            <h3>{`${each.title.slice(0, 23)}${
-              each.title.length > 23 && "..."
-            }`}</h3>
-          </li>
-        ))}
-      </ul>
+      <RenderProducts products={products} />
     </main>
   );
-}
-
-interface Product {
-  id: number;
-  title: string;
-  price: number;
-  description: string;
-  category: string;
-  image: string;
-  rating: {
-    rate: number;
-    count: number;
-  };
 }
