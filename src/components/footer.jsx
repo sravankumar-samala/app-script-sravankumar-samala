@@ -16,7 +16,7 @@ export default function Footer() {
           </div>
           <div className="contact-details-container">
             <div className="contact-us">
-              <h3>Contact us</h3>additional-contact-details
+              <h3>Contact us</h3>
               <div>
                 <p>+44 221 133 5360</p>
                 <p>customercare@mettamuse.com</p>

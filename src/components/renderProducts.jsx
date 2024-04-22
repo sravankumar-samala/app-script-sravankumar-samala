@@ -1,10 +1,19 @@
+"use client";
+
 import Image from "next/image";
 import AddToFavouritesBtn from "./addToFavouritesBtn";
+import { useAppScriptContext } from "@/context/appscriptContext";
 
 export default function RenderProducts({ products }) {
+  const { dispatch, searchValue } = useAppScriptContext();
+
+  const searchProducts = products.filter((product) =>
+    product.title.toLowerCase().includes(searchValue.toLowerCase())
+  );
+
   return (
     <ul className="products-container">
-      {products?.map((each) => (
+      {searchProducts?.map((each) => (
         <li key={each.id} className="product-item">
           <div className="product-image-container">
             <Image
@@ -26,6 +35,6 @@ export default function RenderProducts({ products }) {
 }
 
 function formatProductTitle(title) {
-  const newTitle = title.slice(0, 24).toUpperCase();
-  return `${newTitle}${title.length > 24 ? "..." : ""}`;
+  const newTitle = title.slice(0, 36).toUpperCase();
+  return `${newTitle}${title.length > 36 ? "..." : ""}`;
 }
