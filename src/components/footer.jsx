@@ -1,8 +1,12 @@
+"use client";
+
 import Image from "next/image";
 import SubscribeForm from "./subscribeForm";
 import MetaMuseLinks from "./metaMuseLinks";
 import QuickLinks from "./quickLinks";
+import PaymentModes from "./paymentsAccepted";
 import "../app/footer.css";
+import FollowUs from "./followUs";
 
 export default function Footer() {
   return (
@@ -44,6 +48,10 @@ export default function Footer() {
         <div className="additional-info-container">
           <MetaMuseLinks />
           <QuickLinks />
+          <div className="social-and-payment-links">
+            <FollowUs />
+            <PaymentModes />
+          </div>
         </div>
         <p className="copyrights">
           Copyright © 2023 mettamuse. All rights reserved.

@@ -24,8 +24,7 @@ export default function SmallScreenNavItems({ isNavExpanded, toggleNav }) {
         Contact Us
       </Link>
 
-      {/* didn't implemented onChange event */}
-      <select value="English" className="select-sm" onClick={toggleNav}>
+      <select defaultValue="English" className="select-sm" onClick={toggleNav}>
         <option value="English">ENG</option>
         <option value="Hindi">HINDI</option>
       </select>

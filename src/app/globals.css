@@ -21,6 +21,9 @@ a {
   color: inherit;
   text-decoration: none;
 }
+select {
+  cursor: pointer;
+}
 button,
 select,
 input {
@@ -53,6 +56,7 @@ button {
   place-items: center;
   place-content: center;
   gap: 1em;
+  text-align: center;
 }
 .in-progress-container svg {
   width: 200px;

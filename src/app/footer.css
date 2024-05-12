@@ -9,7 +9,7 @@ footer h3 {
   width: min(90%, 1240px);
   margin-inline: auto;
   padding: 7vw 1em 1em;
-  color: white;
+  /* color: white; */
 }
 
 .contact-info-container {
@@ -19,6 +19,7 @@ footer h3 {
   border-bottom: 2px solid white;
   padding-bottom: 1.5em;
   margin-bottom: 3em;
+  color: white;
 }
 
 .subscribe-container {
@@ -92,6 +93,9 @@ footer h3 {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2em;
 }
+.meta-muse-container {
+  color: white;
+}
 .meta-muse-container h3 {
   text-transform: lowercase;
   font-size: clamp(1.2rem, 1.5vw, 1.7rem);
@@ -115,6 +119,50 @@ footer select {
   text-align: center;
 }
 
+.social-and-payment-links {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: white;
+}
+
+.follow-us-list {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+.follow-us-list li:last-child img {
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.payment-modes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.payment-modes-list {
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.payment-mode-item {
+  background-color: white;
+  width: 40px;
+  aspect-ratio: 2/1;
+  display: grid;
+  place-items: center;
+  place-content: center;
+  border-radius: 5px;
+}
+.apple-pay {
+  padding-inline: 3px;
+}
+.payment-mode-item img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
 @media (max-width: 640px) {
   .footer-container {
     width: min(100%, 1240px);
