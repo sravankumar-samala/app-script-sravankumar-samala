@@ -82,3 +82,11 @@
   justify-content: space-between;
   font-family: "Barlow Condensed", sans-serif;
 }
+.filters-and-sorting-container .drop-down-btn {
+  color: black;
+}
+.filters-and-sorting-container > div {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}

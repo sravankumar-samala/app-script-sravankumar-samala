@@ -93,7 +93,8 @@ footer h3 {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2em;
 }
-.meta-muse-container {
+.meta-muse-container,
+.quick-links-container {
   color: white;
 }
 .meta-muse-container h3 {
@@ -108,13 +109,6 @@ footer h3 {
   cursor: pointer;
 }
 
-footer select {
-  color: white;
-  font-size: 1rem;
-  padding: 0.5em 1em;
-  background-color: black;
-  display: none;
-}
 .copyrights {
   text-align: center;
 }
